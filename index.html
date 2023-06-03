@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Custom Site Theming</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="banner" data-bkg="accent2"></div>
+    <div class="wrapper">
+      <header class="hero">
+        <div data-align="right">
+          <p data-fs="2xl">👋</p>
+          <div>
+            <p>I write about <span data-color="primary">web dev</span></p>
+            <p data-color="accent2">design</p>
+            <p data-color="accent1">tech</p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="/headshot.jpg"
+            alt="Devin Headshot"
+            class="headshot"
+            width="280px"
+          />
+          <h1 data-color="primary">Hi, I’m Devin</h1>
+          <p>Welcome to my blog.</p>
+        </div>
+      </header>
+      <main>
+        <img src="/wave.png" alt="" class="wave" />
+        <section aria-labelledby="recent-posts">
+          <h2 class="sr-only" id="recent-posts">Recent Posts</h2>
+          <div class="card-wrapper">
+            <article class="card">
+              <h3 data-color="primary">My Design Process</h3>
+              <div>
+                <img src="/image-1.jpg" alt="Design sketches" />
+                <p>
+                  Design involves problem identification, research,
+                  brainstorming, prototyping, testing, and refining. Effective
+                  communication and feedback are crucial.
+                </p>
+                <a href="#" class="btn">Read Post</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3 data-color="primary">My Favorite Gear</h3>
+              <div>
+                <img src="/image-2.jpg" alt="Coding gear" />
+                <p>
+                  My overview of preferred tech gear, from laptops to
+                  noise-cancelling headphones. I’ll include top picks and
+                  reasons behind my choices.
+                </p>
+                <a href="#" class="btn">Read Post</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3 data-color="primary">Learning to Code</h3>
+              <div>
+                <img src="/image-3.jpg" alt="Laptop on desk" />
+                <p>
+                  When learning to code, start with the basics and practice
+                  regularly with real-life projects. Don't be afraid to make
+                  mistakes or ask for help. Stay curious and keep learning.
+                </p>
+                <a href="#" class="btn">Read Post</a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section aria-labelledby="newsletter-signup" class="cta-wrapper">
+          <div class="cta container">
+            <div>
+              <h2 id="newsletter-signup">New Posts to Your Inbox</h2>
+              <p>
+                Stay in the loop with my blog by subscribing to my email
+                newsletter. Never miss a post and get exclusive content and
+                updates. Join now! Cancel at anytime.
+              </p>
+            </div>
+            <form>
+              <div>
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  autocomplete="email"
+                  placeholder="john@email.com"
+                />
+              </div>
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="banner" data-bkg="primary"></div>
+  </body>
+</html>
