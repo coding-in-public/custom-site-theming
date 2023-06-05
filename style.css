@@ -84,6 +84,35 @@ button {
   color-scheme: light;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bkg: var(--bkg-dark);
+    --text: var(--text-dark);
+    --primary: var(--primary-dark);
+    --accent1: var(--accent1-dark);
+    --accent2: var(--accent2-dark);
+    color-scheme: dark;
+  }
+}
+
+[data-theme="dark"] {
+  --bkg: var(--bkg-dark);
+  --text: var(--text-dark);
+  --primary: var(--primary-dark);
+  --accent1: var(--accent1-dark);
+  --accent2: var(--accent2-dark);
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bkg: var(--bkg-light);
+  --text: var(--text-light);
+  --primary: var(--primary-light);
+  --accent1: var(--accent1-light);
+  --accent2: var(--accent2-light);
+  color-scheme: light;
+}
+
 @media (prefers-reduced-motion) {
   *,
   *::before,

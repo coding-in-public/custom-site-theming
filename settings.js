@@ -1,5 +1,6 @@
 // selectors
 const toggles = document.querySelectorAll(".settings [type='checkbox']");
+const radios = document.querySelectorAll(".settings [type='radio']");
 const doc = document.documentElement;
 
 // functions
@@ -13,5 +14,13 @@ toggles.forEach((toggle) => {
     const { name, checked } = e.target;
     updateSiteUi({ name, value: checked });
     localStorage.setItem(name, checked);
+  });
+});
+
+radios.forEach((radio) => {
+  radio.addEventListener("change", (e) => {
+    const { name, id } = e.target;
+    updateSiteUi({ name, value: id });
+    localStorage.setItem(name, id);
   });
 });
