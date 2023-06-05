@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@500;700&display=swap"
       rel="stylesheet"
     />
+    <script src="./settings.js" type="module"></script>
   </head>
   <body>
     <div class="banner" data-bkg="accent2"></div>
@@ -107,7 +108,16 @@
           <div class="settings-wrapper">
             <h2 class="h3">Custom Site Settings</h2>
             <div class="settings">
-              <div class="stack"></div>
+              <div class="stack">
+                <div class="switch-wrapper">
+                  <input type="checkbox" id="motion" name="motion" />
+                  <label for="motion">Toggle Motion</label>
+                </div>
+                <div class="switch-wrapper">
+                  <input type="checkbox" id="round" name="round" />
+                  <label for="round">Toggle Round</label>
+                </div>
+              </div>
               <div class="stack"></div>
             </div>
           </div>
