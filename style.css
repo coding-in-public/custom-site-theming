@@ -453,3 +453,62 @@ section {
 [type="checkbox"]:checked ~ .switch .thumb::before {
   transform: translate(calc(var(--size) - var(--size) / 2), -50%);
 }
+
+legend {
+  padding-inline: var(--space-md);
+  border: 2px solid var(--customColor);
+  border-radius: var(--round-md);
+  background-color: var(--bkg);
+}
+
+.radio-wrapper {
+  padding: var(--space-xs);
+  border: 2px solid var(--customColor);
+  border-radius: var(--round-md);
+  background-color: var(--bkg);
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.radio {
+  --size: 1.5rem;
+  display: flex;
+  gap: var(--space-2xs);
+  position: relative;
+}
+
+[type="radio"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.check {
+  border: 2px solid var(--customColor);
+  border-radius: var(--round-full);
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--bkg);
+  transition: background-color 0.2s ease-in-out;
+}
+
+[type="radio"]:checked ~ .check {
+  background-color: var(--customColor);
+}
+
+[type="radio"]:focus-visible ~ .check {
+  box-shadow: 0 0 0 3px var(--bkg), 0 0 0 6px var(--customColor);
+}
+
+@media screen and (min-width: 465px) {
+  .radio-wrapper,
+  .stack {
+    max-width: fit-content;
+  }
+
+  .stack {
+    flex: 1 1 40%;
+  }
+}
