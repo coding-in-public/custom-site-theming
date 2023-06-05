@@ -5,6 +5,9 @@ const doc = document.documentElement;
 
 // functions
 function updateSiteUi({ name, value }) {
+  if (name === "customColor") {
+    return doc.style.setProperty("--customColor", `var(--${value})`);
+  }
   return (doc.dataset[name] = value);
 }
 
