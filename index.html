@@ -110,6 +110,10 @@
             <div class="settings">
               <div class="stack">
                 <div class="switch-wrapper">
+                  <input type="checkbox" id="sound" name="sound" />
+                  <label for="sound">Toggle Sound</label>
+                </div>
+                <div class="switch-wrapper">
                   <input type="checkbox" id="motion" name="motion" />
                   <label for="motion">Toggle Motion</label>
                 </div>
@@ -156,5 +160,7 @@
       </main>
     </div>
     <div class="banner" data-bkg="primary"></div>
+    <audio src="/check.mp3" id="audio-check" preload="none"></audio>
+    <audio src="/toggle.mp3" id="audio-toggle" preload="none"></audio>
   </body>
 </html>
