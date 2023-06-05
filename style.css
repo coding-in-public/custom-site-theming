@@ -310,3 +310,23 @@ section {
 }
 
 /* SETTINGS SECTION */
+.settings-wrapper {
+  display: grid;
+  gap: var(--space-sm);
+  max-width: 1050px;
+  margin-inline: auto;
+}
+
+.settings {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-lg) var(--space-md);
+  flex-wrap: wrap;
+  font-size: var(--fs-sm);
+}
+
+.stack {
+  display: grid;
+  gap: var(--space-sm);
+  width: 100%;
+}
